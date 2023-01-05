@@ -1,0 +1,212 @@
+@use './utils/vars' as *;
+@import './components/menu';
+@import './components/navigation';
+@import './components/header-top';
+@import './components/atributes';
+@import './components/work';
+@import './components/label';
+@import './components/our-team';
+@import './components/social-media';
+@import './components/our-coustomers';
+@import './components/footer';
+@import './components/address';
+@import './components/signap-form';
+@import './components/portfolio-page';
+@import './components/main-box';
+@import './components/modal';
+@import './components/modal-form';
+@import './components/checkbox-agreement';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  width: 1600px;
+  background: $color-background;
+  font-family: $font-primary;
+  color: $color-grey;
+}
+.menu {
+  width: 1600px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  display: flex;
+  border-bottom: 1px solid $color-border-menu;
+}
+.container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 200px;
+
+  &--principal {
+    flex-direction: row;
+    max-height: 80px;
+  }
+}
+.menu__logo {
+  width: 145px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.38;
+  letter-spacing: 0.03em;
+  color: $color-black;
+  text-decoration: none;
+  font-family: $font-menu;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.logo__web {
+  color: $color-blue;
+}
+.navigation {
+  width: 254px;
+  margin-top: 32px;
+  margin-left: 93px;
+}
+//finish menu//
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.header {
+  margin-left: -200px;
+  width: 1600px;
+  text-align: center;
+  background-image: linear-gradient(to bottom, $color-background-img, $color-background-img),
+    url(../images/overlay.png);
+  background-size: contain;
+}
+.header-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 106px;
+  padding-bottom: 116px;
+}
+//finish header//
+.attributes {
+  width: 1170px;
+  min-height: 251px;
+  display: flex;
+  box-sizing: content-box;
+  padding-bottom: 0;
+}
+//finish atributes//
+.work {
+  width: 1170px;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+//start label//
+.label {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  top: 1445px;
+}
+//finish label//
+.our-team {
+  width: 1600px;
+  background: $color-third-header-button;
+  margin-left: -200px;
+  display: flex;
+  justify-content: center;
+}
+.social-media {
+  width: 206px;
+  padding: 6px 0;
+  margin: 16px 32px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+//finish your team//
+.our-customers {
+  box-sizing: border-box;
+}
+.footer {
+  position: absolute;
+  width: 1600px;
+  background: $color-header-footer;
+  letter-spacing: 0.03em;
+  display: flex;
+}
+.social-media--footer {
+  margin: 20px 0 0 0;
+  &__icons--color {
+    background: rgba(255, 255, 255, 0.1);
+    fill: $color-background;
+  }
+}
+.address {
+  margin-top: 20px;
+}
+.signup-form {
+  display: flex;
+  margin-left: 78px;
+}
+//finish footer//
+.portfolio-page {
+  box-sizing: content-box;
+  width: 1170px;
+  background: $color-background;
+  color: $color-almost-black;
+}
+.main-box {
+  display: flex;
+}
+//backdrop//
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: 1s;
+}
+.modal {
+  position: absolute;
+  width: 528px;
+  min-height: 581px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  background-color: $color-background;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: 1s;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 40px 20px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-agreement {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}

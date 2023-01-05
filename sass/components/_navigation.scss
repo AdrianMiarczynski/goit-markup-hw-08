@@ -1,0 +1,60 @@
+.navigation {
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__link {
+    float: left;
+    color: $color-almost-black;
+
+    &:focus,
+    &:hover,
+    &:active {
+      color: $color-blue;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  &__link-agency {
+    width: 53px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  &__link-agency--active {
+    color: $color-blue;
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 4px;
+      width: 53px;
+      top: 76px;
+      left: 437px;
+      border-radius: 2px;
+      background-color: $color-blue;
+    }
+  }
+  &__link-portfolio {
+    padding-left: 46px;
+    text-decoration: none;
+  }
+  &__link-portfolio--active {
+    color: $color-blue;
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 4px;
+      width: 53px;
+      top: 76px;
+      left: 537px;
+      background: $color-blue;
+      border-radius: 2px;
+    }
+  }
+  &__link-contact {
+    padding-left: 46px;
+    width: 51px;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,18 @@
+.social-media {
+  &__icons {
+    width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    fill: $color-icons-social-media;
+
+    &:hover,
+    &:focus {
+      background-color: $color-blue;
+      fill: $color-background;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}

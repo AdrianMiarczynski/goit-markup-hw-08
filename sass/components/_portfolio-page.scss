@@ -1,0 +1,38 @@
+.portfolio-page {
+  &__filters {
+    display: flex;
+    margin-left: 295px;
+    width: 572px;
+    text-align: center;
+    justify-content: space-between;
+  }
+  &__item {
+    list-style: none;
+    text-align: center;
+    font-size: 1.62em;
+  }
+  &__button {
+    background-color: $color-third-header-button;
+    border: none;
+    border-radius: 4px;
+    width: 108px;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    padding: 6px;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-blue;
+      color: $color-background;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}

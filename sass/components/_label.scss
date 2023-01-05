@@ -1,0 +1,19 @@
+.label {
+  &__phone {
+    left: 600px;
+  }
+  &__graphic {
+    left: 1000px;
+  }
+  &__aplication {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-background;
+    letter-spacing: 0.03em;
+    width: 190px;
+  }
+}

@@ -1,0 +1,28 @@
+.footer {
+  &__logo {
+    width: 145px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $color-blue;
+    text-decoration: none;
+  }
+  &__logo-studio {
+    color: $color-background;
+  }
+  &__icons-media {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    width: 206px;
+    margin-top: 72px;
+  }
+  &__icons-header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color-background;
+  }
+}

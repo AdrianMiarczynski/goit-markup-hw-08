@@ -1,0 +1,27 @@
+.address {
+  &__list {
+    list-style: none;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  &__item {
+    line-height: 1.71;
+    font-weight: 400;
+    font-style: normal;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-addres-item-focus;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  &__link {
+    color: $color-background;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+}

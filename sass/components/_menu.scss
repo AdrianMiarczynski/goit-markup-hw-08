@@ -1,0 +1,38 @@
+.menu {
+  &__email {
+    width: 161px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-left: 345px;
+    color: $color-grey;
+
+    &:hover,
+    &:focus {
+      color: $color-blue;
+      fill: $color-blue;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  &__icon-envelope {
+    margin-right: 10px;
+  }
+  &__telephone {
+    width: 130px;
+    color: $color-grey;
+    text-decoration: none;
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+      color: $color-blue;
+      fill: $color-blue;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  &__icon-smartphone {
+    margin-right: 10px;
+  }
+}

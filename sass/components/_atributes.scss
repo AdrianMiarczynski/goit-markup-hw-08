@@ -1,0 +1,37 @@
+.attributes {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    list-style: none;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+  }
+  &__wrapper {
+    display: flex;
+    width: 270px;
+    max-height: 120px;
+    background: $color-third-header-button;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  &__icons {
+    padding-left: 100px;
+  }
+  &__list-item {
+    width: 270px;
+  }
+  &__text {
+    text-transform: uppercase;
+    color: $color-almost-black;
+    line-height: 1.71;
+    font-weight: 700;
+    line-height: 1.46;
+  }
+  &__paragraph {
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+}

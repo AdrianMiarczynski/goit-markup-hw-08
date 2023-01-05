@@ -1,0 +1,20 @@
+.work {
+  &__title {
+    width: 352px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    white-space: nowrap;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $color-almost-black;
+    display: flex;
+    margin-bottom: 50px;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+  }
+}
