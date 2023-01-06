@@ -28,6 +28,10 @@ body {
   background: $color-background;
   font-family: $font-primary;
   color: $color-grey;
+     @media screen and (max-width: 480px) {
+      max-width: 480px;
+      display: block;
+  }
 }
 .menu {
   width: 1600px;
@@ -36,17 +40,47 @@ body {
   line-height: 1.14;
   display: flex;
   border-bottom: 1px solid $color-border-menu;
+    @media screen and (max-width: 480px) {
+      max-width: 480px;
+      display: flex;
+      justify-content: space-between;
+  }
 }
+// .menu-container {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   padding: 30px;
+//   background-color: blue;
+//   transform: translateX(100%);
+//   transition: transform 250ms ease-in-out;
+// }
+// .menu-container .is-open{
+//   transform: translateX(0);
+// }
+
 .container {
   max-width: 1200px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-left: 200px;
-
+   @media screen and (max-width: 480px) {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100vw;
+    margin: 0;
+   }
   &--principal {
     flex-direction: row;
     max-height: 80px;
+  
+  @media screen and (max-width: 480px) {
+    display: flex;
+    justify-content: space-between;
+   }
   }
 }
 .menu__logo {
@@ -60,6 +94,13 @@ body {
   font-family: $font-menu;
   padding-top: 24px;
   padding-bottom: 25px;
+   @media screen and (max-width: 480px) {
+    max-width: 134px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    padding-left: 15px;
+   }
 }
 .logo__web {
   color: $color-blue;
