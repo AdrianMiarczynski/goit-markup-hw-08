@@ -9,6 +9,15 @@
     margin-bottom: 30px;
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 480px) {
+      max-width: 365px;
+      max-height: 84px;
+      line-height: 1.62;
+      text-align: center;
+      letter-spacing: 0.06em;
+      font-size: 26px;
+    }
   }
 
   &__button {
@@ -19,6 +28,10 @@
     border: $color-blue;
     border-radius: 4px;
     cursor: pointer;
+    
+     @media screen and (max-width: 480px) {
+   
+    }
   }
   &__service {
     font-weight: 700;
