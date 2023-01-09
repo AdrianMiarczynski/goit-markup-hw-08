@@ -10,6 +10,10 @@
     line-height: 1.14;
     text-transform: uppercase;
     letter-spacing: 0.03em;
+    @media screen and (max-width: 480px) {
+      margin-top: 0px;
+      align-items: center;
+    }
   }
   &__input {
     min-width: 378px;
@@ -24,6 +28,9 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
+    @media screen and (max-width: 480px) {
+      min-width: 450px;
+    }
   }
   &__button {
     margin: 108px 215px 94px 12px;
@@ -43,8 +50,11 @@
     fill: $color-background;
     border: none;
     cursor: pointer;
+    @media screen and (max-width: 480px) {
+      margin: 20px 140px 60px;
+    }
   }
   &__icon {
-    margin-left: 24px;
+    margin-left: 2px;
   }
 }
