@@ -21,6 +21,9 @@
       border: 1px solid $color-blue;
       outline: none;
     }
+    @media screen and (max-width: 480px) {
+      min-width: 370px;
+    }
   }
   &__label {
     position: relative;
@@ -30,6 +33,7 @@
     &:hover,
     &:active {
       fill: $color-blue;
+      color:$color-blue;
     }
   }
   &__icon {
@@ -42,6 +46,7 @@
   &__text-area {
     margin-bottom: 20px;
     resize: none;
+    font-family: $font-primary;
     min-width: 100%;
     min-height: 120px;
     color: $color-almost-black;
@@ -75,5 +80,10 @@
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+
+    @media screen and (max-width: 480px) {
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 }
