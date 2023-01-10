@@ -14,6 +14,11 @@
       font-size: 28px;
       padding-left: 159px;
     }
+      @media screen and (max-width: 768px) {
+      max-width: 163px;
+      font-size: 28px;
+      padding-left: 303px;
+    }
   }
   &__list {
     width: 1170px;
@@ -25,6 +30,14 @@
       max-width: 480px;
       display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+    }
+     @media screen and (max-width: 768px) {
+      max-width: 768px;
+      display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       margin-top: 30px;
@@ -43,6 +56,10 @@
 
     @media screen and (max-width: 480px) {
       min-width: 450px;
+      // min-height: 622px;    wstawić zdj!!!
+    }
+     @media screen and (min-width: 481px) and (max-width: 768px) {
+      min-width: 354px;
       // min-height: 622px;    wstawić zdj!!!
     }
   }

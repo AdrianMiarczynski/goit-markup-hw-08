@@ -145,7 +145,6 @@ body {
     margin: 0;
   }
   @media screen and (max-width: 768px) {
-    min-width: 768px;
     display: flex;
     margin: 0;
   }
@@ -247,7 +246,7 @@ body {
     display: flex;
     max-width: 480px;
   }
-    @media screen and (max-width: 768px) {
+    @media screen and (min-width: 481px) and (max-width: 768px) {
     display: flex;
     max-width: 768px;
   }
@@ -261,6 +260,9 @@ body {
   justify-content: center;
   align-items: center;
   @media screen and (max-width: 480px) {
+    display: none;
+  }
+   @media screen and (max-width: 768px) {
     display: none;
   }
 }
@@ -288,6 +290,10 @@ body {
     margin: 0;
     max-width: 100vw;
   }
+   @media screen and (max-width: 768px) {
+    margin: 0;
+    max-width: 100vw;
+  }
 }
 .social-media {
   width: 206px;
@@ -300,10 +306,20 @@ body {
   @media screen and (max-width: 480px) {
     margin: 16px 122px 24px;
   }
+   @media screen and (min-width: 481px) and (max-width: 768px) {
+    margin: 16px 74px 24px;
+
+  }
 }
 //finish your team//
 .our-customers {
   box-sizing: border-box;
+  @media screen and (max-width:480px) {
+    max-width: 100vw;
+  }
+   @media screen and (max-width:768px) {
+    max-width: 100vw;
+  }
 }
 .footer {
   position: absolute;
@@ -318,19 +334,26 @@ body {
     justify-content: center;
     align-items: center;
   }
+  @media screen and (max-width: 768px) {
+    max-width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .last {
     display: flex;
     flex-direction: column;
     justify-items: center;
-    align-items: center;
+    @media screen and (max-width: 480px) {
+      align-items: center;
+    }
+      @media screen and (max-width: 768px) {
+      align-items: center;
+    }
   }
 }
 .social-media--footer {
   margin: 20px 0 0 0;
-  &__icons--color {
-    background: rgba(255, 255, 255, 0.1);
-    fill: $color-background;
-  }
 }
 .address {
   margin-top: 20px;
@@ -343,6 +366,12 @@ body {
     flex-direction: column;
     margin-left: 0;
     align-items: center;
+  }
+   @media screen and (max-width: 768px) {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
+    justify-content: center;
   }
 }
 //finish footer//
