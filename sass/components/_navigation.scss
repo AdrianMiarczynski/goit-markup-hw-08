@@ -32,11 +32,17 @@
       left: 437px;
       border-radius: 2px;
       background-color: $color-blue;
+      @media screen and (max-width: 768px) {
+        left: 229px
+      }
     }
   }
   &__link-portfolio {
     padding-left: 46px;
     text-decoration: none;
+      @media screen and (max-width: 768px) {
+    padding-left: 60px;
+      }
   }
   &__link-portfolio--active {
     color: $color-blue;
@@ -56,6 +62,10 @@
     padding-left: 46px;
     width: 51px;
     text-decoration: none;
+
+     @media screen and (max-width: 768px) {
+    padding-left: 60px;
+      }
   }
    @media screen and (max-width: 480px) {
    display: none;
