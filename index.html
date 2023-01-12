@@ -19,7 +19,7 @@
     <header class="menu">
       <div class="container container--principal">
         <a class="menu__logo" href="index.html"><span class="logo__web">Web</span>Studio</a>
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg height="40" width="40">
             <use href="images/icons.svg#icon-menu_24px"></use>
           </svg>
@@ -483,22 +483,24 @@
         </form>
       </div>
     </div>
-    <!-- <div class="menu-container js-menu-container">
-      <button class="menu-toggle js-close-menu">X</button>
-      <ul class="menu-container__list-links">
-        <li class="menu-container__item-link--agencja">Agencja</li>
-        <li class="menu-container__item-link--portfolio">Portfolio</li>
-        <li class="menu-container__item-link--contact">Kontakt</li>
-        <li class="menu-container__item-link--tel">+48 111 111 111</li>
-        <li class="menu-container__item-link--email">info@devstudio.com</li>
-      </ul>
-      <ul class="menu-container__list-socail">
-        <li class="menu-container__item-social">Instagram</li>
-        <li class="menu-container__item-social">Twitter</li>
-        <li class="menu-container__item-social">Facebook</li>
-        <li class="menu-container__item-social">Linkedin</li>
-      </ul>
-    </div> -->
+    <div class="menu-container js-menu-container">
+      <button class="menu__toggle menu__toggle--open js-close-menu">X</button>
+      <div class="menu-container__wrapper">
+        <ul class="menu-container__list">
+          <li class="menu-container__item"><a class="menu-container__item-link" href="./index.html" >Agencja</a></li>
+          <li class="menu-container__item"><a class="menu-container__item-link" href="./portfolio.html">Portfolio</a></li>
+          <li class="menu-container__item"><a class="menu-container__item-link" href="#">Kontakt</a></li>
+          <li class="menu-container__item menu-container__item--tel"><a class="menu-container__item-link menu-container__item-link--tel" href="tel:++48111111111">+48 111 111 111</a></li>
+          <li class="menu-container__item"><a class="menu-container__item-link menu-container__item-link--email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+        <ul class="menu-container__list-socail">
+          <li class="menu-container__item-social">Instagram</li>
+          <li class="menu-container__item-social">Twitter</li>
+          <li class="menu-container__item-social">Facebook</li>
+          <li class="menu-container__item-social">Linkedin</li>
+        </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
     <script src="js/mobile-menu.js"></script>
   </body>
