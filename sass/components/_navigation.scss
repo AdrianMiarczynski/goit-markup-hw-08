@@ -4,7 +4,10 @@
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 60px;
+    gap: 3.75rem;
+    @media screen and (min-width: 1200px) {
+      gap: 2.9rem;
+    }
   }
   &__link {
     color: $color-almost-black;
@@ -33,7 +36,11 @@
       border-radius: 2px;
       background-color: $color-blue;
       @media screen and (min-width: 768px) {
-        left: 249px
+        left: 249px;
+      }
+      @media screen and (min-width: 1200px) {
+        // left: 676px;
+        left: 602px;
       }
     }
   }

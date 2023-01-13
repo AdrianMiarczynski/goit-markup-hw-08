@@ -1,4 +1,7 @@
 .attributes {
+  &__container {
+    width: 100%;
+  }
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -19,6 +22,13 @@
       margin-right: 15px;
       padding-bottom: 45px;
     }
+    @media screen and (min-width: 1200px) {
+      max-width: 100vw;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 0;
+      // padding-bottom: 94px;
+    }
   }
   &__list-item {
     max-width: 450px;
@@ -27,23 +37,30 @@
     align-items: center;
 
     @media screen and (min-width: 768px) {
-      max-width: 354px; 
-     }
+      max-width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 270px;
+    }
   }
   &__wrapper {
     background: $color-third-header-button;
     border-radius: 4px;
     margin-bottom: 30px;
-    padding: 25px 142px;
-  
-     @media screen and (min-width: 768px) {
+    padding: 25px 190px;
+
+    @media screen and (min-width: 768px) {
       min-width: 354px;
-     }
+      padding: 25px 142px;
+    }
+    @media screen and (min-width: 1200px) {
+      min-width: 270px;
+      padding: 25px 100px;
+    }
   }
   &__icons {
     max-height: 70px;
     max-width: 70px;
-
   }
   &__text {
     text-transform: uppercase;

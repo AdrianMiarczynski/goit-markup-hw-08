@@ -10,7 +10,6 @@
     position: absolute;
     border: 1px solid $color-black;
     border-radius: 2px;
-   
   }
   &__icon {
     opacity: 0;
@@ -20,9 +19,9 @@
   &__label {
     position: relative;
     cursor: pointer;
-      font-weight: 400;
-      font-size: 12px;
-      letter-spacing: 0.03;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.03;
   }
   &__input {
     min-width: 15px;

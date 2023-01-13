@@ -16,10 +16,10 @@
   </head>
   <body>
     <!--Menu-->
-     <header class="menu">
+       <header class="menu">
       <div class="container container--principal">
         <a class="menu__logo" href="index.html"><span class="logo__web">Web</span>Studio</a>
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg height="40" width="40">
             <use href="images/icons.svg#icon-menu_24px"></use>
           </svg>
@@ -28,20 +28,20 @@
           <ul class="navigation__list">
             <li>
               <a
-                class="navigation__link navigation__link-agency "
+                class="navigation__link navigation__link-agency navigation__link-agency--active"
                 href="./index.html"
                 >Agencja</a
               >
             </li>
             <li>
-              <a class="navigation__link navigation__link-portfolio navigation__link-portfolio--active" href="portfolio.html"
+              <a class="navigation__link navigation__link-portfolio" href="portfolio.html"
                 >Portfolio</a
               >
             </li>
             <li><a class="navigation__link navigation__link-contact" href="#">Kontakt</a></li>
           </ul>
         </nav>
-        <div class="menu__link-wrepper">
+        <div class="menu__link-wrapper">
           <a class="menu__email" href="mailto:info@devstudio.com"
             ><svg class="menu__icon-envelope" width="16" weight="12">
               <use href="./images/icons.svg#icon-envelope"></use>
@@ -283,7 +283,7 @@
       </div>
     </main>
     <!--Footer-->
-      <footer class="footer">
+ <footer class="footer">
       <div class="footer__wrapper">
         <div class="container last">
           <a class="footer__logo" href="index.html"
@@ -292,7 +292,10 @@
           <address class="address">
             <ul class="address__list">
               <li class="address__item">
-                <a class="address__link" href="https://goo.gl/maps/dhSm4bZQ5p9KXUbg6" target="_blank"
+                <a
+                  class="address__link"
+                  href="https://goo.gl/maps/dhSm4bZQ5p9KXUbg6"
+                  target="_blank"
                   >m. Warszawa, Aleje Jerozolimskie 21</a
                 >
               </li>

@@ -1,4 +1,9 @@
 .our-customers {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   &__title {
     font-weight: 700;
     font-size: 28px;
@@ -6,16 +11,27 @@
     text-align: center;
     color: $color-almost-black;
     letter-spacing: 0.03em;
-  
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+    }
   }
   &__list {
     display: flex;
     padding-top: 30px;
-    justify-content: space-between;
+    justify-content: center;
     list-style: none;
     margin: 0 15px;
     flex-wrap: wrap;
     gap: 30px;
+    max-width: 450px;
+    @media screen and (min-width: 768px) {
+      justify-content: space-between;
+      max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      min-width: 1200px;
+    }
   }
   &__logo {
     fill: $color-icons-social-media;
@@ -27,9 +43,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
       min-width: 226px;
-  }
+    }
+    @media screen and (min-width: 1200px) {
+      min-width: 170px;
+    }
     &:hover,
     &:focus {
       border: 1px solid $color-blue;

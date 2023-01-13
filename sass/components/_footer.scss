@@ -1,13 +1,16 @@
 .footer {
-  &__wrapper{
+  &__wrapper {
     display: flex;
-      flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      min-width: 100vw;
+      flex-direction: row;
+      justify-content: space-around;
       align-items: center;
-       @media screen and (min-width: 768px) {
-        min-width: 100vw;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+    }
+    @media screen and (min-width: 1200px) {
+      min-width: 0;
     }
   }
   &__logo {
@@ -28,10 +31,13 @@
     align-items: center;
     width: 206px;
     padding-top: 60px;
-    // margin-left: 70px;
-    // margin-top: 72px;
-        @media screen and (min-width: 768px) {
-          padding-bottom: 2.56rem;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 2.56rem;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 4.5rem;
+      padding-bottom: 6.25rem;
+      margin-left: 4.4rem;
     }
   }
   &__icons-header {

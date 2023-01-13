@@ -1,13 +1,21 @@
 .container {
-  max-width: 1200px;
-  display: flex;
+  // max-width: 1200px;
+  // display: flex;
+  // justify-content: center;
+  // flex-direction: column;
+  // margin-left: 200px;
   justify-content: center;
   flex-direction: column;
-  margin-left: 200px;
-
   &--principal {
     flex-direction: row;
     max-height: 80px;
+    justify-content: space-between;
+    padding: 0 15px;
+    @media screen and (min-width: 1200px) {
+      padding: 0 13.5rem;
+    }
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     min-width: 100vw;
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   }
 }
