@@ -110,9 +110,16 @@ body {
   min-height: 400px;
   text-align: center;
   background-image: linear-gradient(to bottom, $color-background-img, $color-background-img),
-    url(../images/overlay.png);
+    url(../images/overlay480.png);
   background-size: cover;
+  
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to bottom, $color-background-img, $color-background-img),
+    url(../images/overlay768.png);
+  }
   @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(to bottom, $color-background-img, $color-background-img),
+    url(../images/overlay.png);
     min-height: 600px;
   }
 }
