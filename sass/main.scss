@@ -24,33 +24,18 @@
 }
 body {
   position: relative;
-  width: 1600px;
   background: $color-background;
   font-family: $font-primary;
   color: $color-grey;
-  @media screen and (max-width: 480px) {
-    max-width: 480px;
-    display: block;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    min-width: 768px;
-    display: block;
-  }
 }
 .menu {
-  width: 1600px;
+  width: 100vw;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   display: flex;
   border-bottom: 1px solid $color-border-menu;
-  @media screen and (max-width: 480px) {
-    max-width: 480px;
-    display: flex;
-    justify-content: space-between;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    min-width: 768px;
+  @media screen and (min-width: 768px) {
     display: flex;
   }
 }
@@ -70,34 +55,20 @@ body {
 .menu-container.is-open {
   transform: translateX(0);
   opacity: 1;
-  @media screen and(min-width: 481px) {
-    display: none;
-  }
 }
 .container {
-  max-width: 1200px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-left: 200px;
-  @media screen and (max-width: 480px) {
-    display: flex;
-    justify-content: space-between;
-    min-width: 100vw;
-    margin: 0;
-  }
-  @media screen and (max-width: 768px) {
-    display: flex;
-    margin: 0;
-  }
+  // margin-left: 200px;
   &--principal {
     flex-direction: row;
     max-height: 80px;
-
-    @media screen and (max-width: 480px) {
-      display: flex;
-      justify-content: space-between;
-    }
+    justify-content: space-between;
+    padding: 0 15px;
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    min-width: 100vw;
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   }
 }
 .menu__logo {
@@ -111,102 +82,56 @@ body {
   font-family: $font-menu;
   padding-top: 24px;
   padding-bottom: 25px;
-  @media screen and (max-width: 480px) {
-    max-width: 134px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    display: flex;
-    padding-left: 15px;
-  }
-  @media screen and (max-width: 768px) {
-    padding-left: 15px;
-  }
 }
 .logo__web {
   color: $color-blue;
 }
 .navigation {
-  width: 254px;
-  margin-top: 32px;
-  margin-left: 93px;
-  @media screen and (max-width: 768px) {
-    margin-left: 83px;
+  display: none;
+  @media screen and (min-width: 768px) {
+  display: flex;
+  align-items: center;
   }
 }
 //finish menu//
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
-  @media screen and (max-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  @media screen and (max-width: 768px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .header {
-  margin-left: -200px;
-  width: 1600px;
+  // margin-left: -200px;
+  // width: 1600px;
+  max-width: 100vw;
+  min-height: 400px;
   text-align: center;
   background-image: linear-gradient(to bottom, $color-background-img, $color-background-img),
     url(../images/overlay.png);
-  background-size: contain;
-  @media screen and (max-width: 480px) {
-    max-width: 100vw;
-    max-height: 400px;
-    margin: 0;
-    padding: 0;
-    background-repeat: no-repeat;
-  }
-  @media screen and (max-width: 768px) {
-    max-width: 100vw;
-    max-height: 400px;
-    margin: 0;
-    padding: 0;
-    background-repeat: no-repeat;
-  }
+  background-size: cover;
 }
 .header-top {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 106px;
-  padding-bottom: 116px;
+  padding-top: 58px;
+  padding-bottom: 58px;
 }
 //finish header//
 .attributes {
-  width: 1170px;
-  min-height: 251px;
   display: flex;
-  box-sizing: content-box;
   padding-bottom: 0;
-
-  @media screen and (max-width: 480px) {
-    display: flex;
-    max-width: 480px;
-  }
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    display: flex;
-    max-width: 768px;
-  }
+  width: 100vw;
 }
 //finish atributes//
 .work {
-  width: 1170px;
-  box-sizing: content-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  @media screen and (max-width: 480px) {
-    display: none;
-  }
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
+  display: none;
+  // width: 1170px;
+  // box-sizing: content-box;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
 }
 //start label//
 .label {
@@ -222,20 +147,12 @@ body {
 }
 //finish label//
 .our-team {
-  width: 1600px;
+  // width: 1600px;
+  // margin-left: -200px;
   background: $color-third-header-button;
-  margin-left: -200px;
-  display: flex;
-  justify-content: center;
-
-  @media screen and (max-width: 480px) {
-    margin: 0;
-    max-width: 100vw;
-  }
-  @media screen and (max-width: 768px) {
-    margin: 0;
-    max-width: 100vw;
-  }
+  margin: 0;
+  text-align: center;
+  max-width: 100vw;
 }
 .social-media {
   width: 206px;
@@ -245,37 +162,30 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  @media screen and (max-width: 480px) {
-    margin: 16px 122px 24px;
-  }
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    margin: 16px 74px 24px;
-  }
+  // @media screen and (max-width: 480px) {
+  //   margin: 16px 122px 24px;
+  // }
+  // @media screen and (min-width: 481px) and (max-width: 768px) {
+  //   margin: 16px 74px 24px;
+  // }
 }
 //finish your team//
 .our-customers {
   box-sizing: border-box;
-  @media screen and (max-width: 480px) {
-    max-width: 100vw;
-  }
-  @media screen and (max-width: 768px) {
-    max-width: 100vw;
-  }
+  max-width: 100vw;
+
 }
 .footer {
   position: absolute;
-  width: 1600px;
+  // width: 1600px;
   background: $color-header-footer;
   letter-spacing: 0.03em;
   display: flex;
-  @media screen and (max-width: 480px) {
-    max-width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  @media screen and (max-width: 768px) {
+  max-width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
     max-width: 100vw;
     flex-direction: column;
     justify-content: center;
@@ -285,12 +195,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-items: center;
-    @media screen and (max-width: 480px) {
-      align-items: center;
-    }
-    @media screen and (max-width: 768px) {
-      align-items: center;
-    }
+    align-items: center;
   }
 }
 .social-media--footer {
@@ -301,19 +206,17 @@ body {
 }
 .signup-form {
   display: flex;
-  margin-left: 78px;
-
-  @media screen and (max-width: 480px) {
-    flex-direction: column;
-    margin-left: 0;
-    align-items: center;
-  }
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-    margin-left: 0;
-    align-items: center;
-    justify-content: center;
-  }
+  flex-direction: column;
+  margin-left: 0;
+  align-items: center;
+  
+  // margin-left: 78px;
+  // @media screen and (max-width: 768px) {
+  //   flex-direction: column;
+  //   margin-left: 0;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
 }
 //finish footer//
 .portfolio-page {
@@ -328,7 +231,8 @@ body {
 //backdrop//
 .backdrop {
   position: fixed;
-  width: 100%;
+  width: 100vw;
+  // width: 100%;
   height: 100vh;
   left: 0px;
   top: 0px;
@@ -337,8 +241,8 @@ body {
 }
 .modal {
   position: absolute;
-  width: 528px;
-  min-height: 581px;
+  // width: 528px;
+  // min-height: 581px;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
@@ -346,10 +250,8 @@ body {
   background-color: $color-background;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  @media screen and (max-width: 480px) {
     max-width: 450px;
     max-height: 609px;
-  }
 }
 .is-hidden {
   opacity: 0;

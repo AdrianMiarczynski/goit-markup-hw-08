@@ -4,13 +4,10 @@
   justify-content: center;
   flex-direction: column;
   margin-left: 200px;
-  @media screen and (max-width: 480px) {
-    margin: 0;
-    display: flex;
-  }
 
   &--principal {
     flex-direction: row;
     max-height: 80px;
+    min-width: 100vw;
   }
 }

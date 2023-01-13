@@ -2,22 +2,24 @@
   &__label {
     display: flex;
     flex-direction: column;
-    margin-top: 72px;
+    // margin-top: 72px;
+    margin-top: 3.75rem;
     color: $color-background;
+    align-items: center;
     font-weight: 700;
     font-style: normal;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     letter-spacing: 0.03em;
-    @media screen and (max-width: 480px) {
-      margin-top: 0px;
-      align-items: center;
-    }
-       @media screen and (max-width: 768px) {
-      margin-top: 60px;
-      align-items: center;
-    }
+    // @media screen and (max-width: 480px) {
+    //   margin-top: 0px;
+    //   align-items: center;
+    // }
+    //    @media screen and (max-width: 768px) {
+    //   margin-top: 60px;
+    //   align-items: center;
+    // }
   }
   &__input {
     min-width: 378px;
@@ -32,15 +34,16 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
-    @media screen and (max-width: 480px) {
-      min-width: 450px;
-    }
-     @media screen and (max-width: 768px) {
-       min-width: 450px;
-    }
+    // @media screen and (max-width: 480px) {
+    //   min-width: 450px;
+    // }
+    //  @media screen and (max-width: 768px) {
+    //    min-width: 450px;
+    // }
   }
   &__button {
-    margin: 108px 215px 94px 12px;
+    // margin: 108px 215px 94px 12px;
+    margin: 20px 140px 60px;
     min-height: 50px;
     min-width: 200px;
     display: flex;
@@ -57,12 +60,12 @@
     fill: $color-background;
     border: none;
     cursor: pointer;
-    @media screen and (max-width: 480px) {
-      margin: 20px 140px 60px;
-    }
-     @media screen and (max-width: 768px) {
-      margin: 20px 0 60px 0;
-    }
+    // @media screen and (max-width: 480px) {
+    //   margin: 20px 140px 60px;
+    // }
+    //  @media screen and (max-width: 768px) {
+    //   margin: 20px 0 60px 0;
+    // }
   }
   &__icon {
     margin-left: 2px;
