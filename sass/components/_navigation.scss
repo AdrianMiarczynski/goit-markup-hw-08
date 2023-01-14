@@ -25,22 +25,23 @@
   }
   &__link-agency--active {
     color: $color-blue;
+    position: relative;
 
     &::after {
       content: '';
       position: absolute;
       height: 4px;
       width: 53px;
-      top: 76px;
-      // left: 537px;
+      top: 48px;
+      left: 0;
       border-radius: 2px;
       background-color: $color-blue;
       @media screen and (min-width: 768px) {
-        left: 249px;
+        // left: 400px;
       }
       @media screen and (min-width: 1200px) {
         // left: 676px;
-        left: 602px;
+        // left: 602px;
       }
     }
   }
