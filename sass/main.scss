@@ -35,7 +35,7 @@ img {
   max-width: 100%;
 }
 .menu {
-  width: 100vw;
+  width: 100%;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -47,7 +47,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  min-width: 100vw;
+  min-width: 100%;
   min-height: 100vh;
   background-color: $color-background;
   transform: translateX(100%);
@@ -110,7 +110,7 @@ img {
   }
 }
 .header {
-  max-width: 100vw;
+  max-width: 100%;
   min-height: 400px;
   text-align: center;
   background-image: linear-gradient(to bottom, $color-background-img, $color-background-img),
@@ -136,28 +136,28 @@ img {
       url(../images/overlay480@x2.png);
   }
 }
-@media screen and (min-width: 768px) {
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .header {
-      background-image: linear-gradient(to bottom, $color-background-img, $color-background-img),
-        url(../images/overlay768@2x.png);
-    }
-  }
-}
-@media screen and (min-width: 1200px) {
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .header {
-      background-image: linear-gradient(to bottom, $color-background-img, $color-background-img),
-        url(../images/overlay@2x.jpg);
-    }
-  }
-}
+// @media screen and (min-width: 768px) {
+//   @media (min-device-pixel-ratio: 2),
+//     (-webkit-min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     .header {
+//       background-image: linear-gradient(to bottom, $color-background-img, $color-background-img),
+//         url(../images/overlay768@2x.png);
+//     }
+//   }
+// }
+// @media screen and (min-width: 1200px) {
+//   @media (min-device-pixel-ratio: 2),
+//     (-webkit-min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     .header {
+//       background-image: linear-gradient(to bottom, $color-background-img, $color-background-img),
+//         url(../images/overlay@2x.jpg);
+//     }
+//   }
+// }
 .header-top {
   display: flex;
   flex-direction: column;
@@ -173,7 +173,7 @@ img {
 .attributes {
   display: flex;
   padding-bottom: 0;
-  width: 100vw;
+  width: 100%;
   @media screen and (min-width: 1200px) {
     min-width: 1200px;
   }
@@ -207,7 +207,7 @@ img {
   background: $color-third-header-button;
   margin: 0;
   text-align: center;
-  max-width: 100vw;
+  max-width: 100%;
 }
 .social-media {
   max-width: 206px;
@@ -227,7 +227,7 @@ img {
 //finish your team//
 .our-customers {
   box-sizing: border-box;
-  max-width: 100vw;
+  max-width: 100%;
 }
 .footer {
   background: $color-header-footer;
