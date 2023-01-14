@@ -36,20 +36,10 @@
       left: 0;
       border-radius: 2px;
       background-color: $color-blue;
-      @media screen and (min-width: 768px) {
-        // left: 400px;
-      }
-      @media screen and (min-width: 1200px) {
-        // left: 676px;
-        // left: 602px;
-      }
     }
   }
   &__link-portfolio {
     text-decoration: none;
-    //   @media screen and (max-width: 768px) {
-    // padding-left: 60px;
-    //   }
   }
   &__link-portfolio--active {
     color: $color-blue;
@@ -68,12 +58,5 @@
   &__link-contact {
     width: 51px;
     text-decoration: none;
-
-    //  @media screen and (max-width: 768px) {
-    // padding-left: 60px;
-    //   }
   }
-  //  @media screen and (max-width: 480px) {
-  //  display: none;
-  // }
 }
