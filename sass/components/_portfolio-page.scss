@@ -1,10 +1,17 @@
 .portfolio-page {
   &__filters {
     display: flex;
-    margin-left: 295px;
-    width: 572px;
-    text-align: center;
-    justify-content: space-between;
+    max-width: 392px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 0.5rem;
+    box-sizing: border-box;
+    @media screen and (min-width: 768px) {
+      max-width: 645px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 572px;
+    }
   }
   &__item {
     list-style: none;
@@ -15,7 +22,7 @@
     background-color: $color-third-header-button;
     border: none;
     border-radius: 4px;
-    width: 108px;
+    min-width: 108px;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;

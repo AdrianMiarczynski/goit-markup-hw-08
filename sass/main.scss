@@ -127,9 +127,7 @@ img {
     min-height: 600px;
   }
 }
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .header {
     background-image: linear-gradient(to bottom, $color-background-img, $color-background-img),
       url(../images/overlay480@x2.png);
@@ -284,13 +282,21 @@ img {
 }
 //finish footer//
 .portfolio-page {
-  box-sizing: content-box;
-  width: 1170px;
+  max-width: 100%;
   background: $color-background;
   color: $color-almost-black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .main-box {
   display: flex;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1170px;
+  }
 }
 //backdrop//
 .backdrop {
@@ -309,11 +315,11 @@ img {
   top: 50%;
   left: 50%;
   border-radius: 4px;
-  width: min(93.75vw,28.125rem);
+  width: min(93.75vw, 28.125rem);
   background-color: $color-background;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
- 
+
   @media screen and (min-width: 1200px) {
     min-width: 528px;
     min-height: 581px;

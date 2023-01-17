@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <title>Hw2-Portfolio</title>
+    <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +16,7 @@
   </head>
   <body>
     <!--Menu-->
-       <header class="menu">
+    <header class="menu">
       <div class="container container--principal">
         <a class="menu__logo" href="index.html"><span class="logo__web">Web</span>Studio</a>
         <button class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -27,14 +27,12 @@
         <nav class="navigation">
           <ul class="navigation__list">
             <li>
-              <a
-                class="navigation__link navigation__link-agency navigation__link-agency--active"
-                href="./index.html"
-                >Agencja</a
-              >
+              <a class="navigation__link navigation__link-agency" href="./index.html">Agencja</a>
             </li>
             <li>
-              <a class="navigation__link navigation__link-portfolio" href="portfolio.html"
+              <a
+                class="navigation__link navigation__link-portfolio navigation__link-portfolio--active"
+                href="portfolio.html"
                 >Portfolio</a
               >
             </li>
@@ -88,12 +86,14 @@
               <li class="main-box__item">
                 <figure class="main-box__box-img">
                   <div class="main-box__hidden-label">
-                    <img
-                      src="images/technocrack.jpg"
-                      alt="portrety ludzi wyswietlone na wyswietlaczu laptopa"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source media="(min-width: 1200px" srcset="images/technocrack.jpg" />
+                      <source media="(min-width: 768px" srcset="images/technocrack768.jpg" />
+                      <img
+                        src="images/technocrack480@2x.jpg"
+                        alt="portrety ludzi wyswietlone na wyswietlaczu laptopa"
+                      />
+                    </picture>
                     <div class="main-box__label">
                       <p class="main-box__paragraph">
                         Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -111,12 +111,20 @@
               <li class="main-box__item">
                 <figure class="main-box__box-img">
                   <div class="main-box__hidden-label">
-                    <img
-                      src="images/new-orlean-vs-golden-star.jpg"
-                      alt="ludzie grający w koszykowke"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px"
+                        srcset="images/new-orlean-vs-golden-star.jpg"
+                      />
+                      <source
+                        media="(min-width: 768px"
+                        srcset="images/new-orlean-vs-golden-star768.jpg"
+                      />
+                      <img
+                        src="images/new-orlean-vs-golden-star480@2x.jpg"
+                        alt="ludzie grający w koszykowke"
+                      />
+                    </picture>
                     <div class="main-box__label">
                       <p class="main-box__paragraph">
                         Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -134,12 +142,11 @@
               <li class="main-box__item">
                 <figure class="main-box__box-img">
                   <div class="main-box__hidden-label">
-                    <img
-                      src="images/restaurant-seafood.jpg"
-                      alt="logo restauracji"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source media="(min-width: 1200px" srcset="images/restaurant-seafood.jpg" />
+                      <source media="(min-width: 768px" srcset="images/technocrack768.jpg" />
+                      <img src="images/restaurant-seafood480@2x.jpg" alt="logo restauracji" />
+                    </picture>
                     <div class="main-box__label">
                       <p class="main-box__paragraph">
                         Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -157,12 +164,11 @@
               <li class="main-box__item">
                 <figure class="main-box__box-img">
                   <div class="main-box__hidden-label">
-                    <img
-                      src="images/project-prime.jpg"
-                      alt="sluchawki bezprzewodowe"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source media="(min-width: 1200px" srcset="images/project-prime.jpg" />
+                      <source media="(min-width: 768px" srcset="images/project-prime768.jpg" />
+                      <img src="images/project-prime480@2x.jpg" alt="sluchawki bezprzewodowe" />
+                    </picture>
                     <div class="main-box__label">
                       <p class="main-box__paragraph">
                         Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -180,7 +186,11 @@
               <li class="main-box__item">
                 <figure class="main-box__box-img">
                   <div class="main-box__hidden-label">
-                    <img src="images/project-boxes.jpg" alt="klocki" width="370" height="294" />
+                    <picture>
+                      <source media="(min-width: 1200px" srcset="images/project-boxes.jpg" />
+                      <source media="(min-width: 768px" srcset="images/project-boxes768.jpg" />
+                      <img src="images/project-boxes480@2x.jpg" alt="klocki" />
+                    </picture>
                     <div class="main-box__label">
                       <p class="main-box__paragraph">
                         Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -198,12 +208,20 @@
               <li class="main-box__item">
                 <figure class="main-box__box-img">
                   <div class="main-box__hidden-label">
-                    <img
-                      src="images/inspiration-has-no-borders.jpg"
-                      alt="wyswietlacz monitora"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px"
+                        srcset="images/inspiration-has-no-borders.jpg"
+                      />
+                      <source
+                        media="(min-width: 768px"
+                        srcset="images/inspiration-has-no-borders768.jpg"
+                      />
+                      <img
+                        src="images/inspiration-has-no-borders480@2x.jpg"
+                        alt="wyswietlacz monitora"
+                      />
+                    </picture>
                     <div class="main-box__label">
                       <p class="main-box__paragraph">
                         Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -221,7 +239,11 @@
               <li class="main-box__item">
                 <figure class="main-box__box-img">
                   <div class="main-box__hidden-label">
-                    <img src="images/limited-edition.jpg" alt="ksiazka" width="370" height="294" />
+                    <picture>
+                      <source media="(min-width: 1200px" srcset="images/limited-edition.jpg" />
+                      <source media="(min-width: 768px" srcset="images/limited-edition768.jpg" />
+                      <img src="images/limited-edition480@2x.jpg" alt="ksiazka" />
+                    </picture>
                     <div class="main-box__label">
                       <p class="main-box__paragraph">
                         Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -239,7 +261,11 @@
               <li class="main-box__item">
                 <figure class="main-box__box-img">
                   <div class="main-box__hidden-label">
-                    <img src="images/project-lab.jpg" alt="zawieszka" width="370" height="294" />
+                    <picture>
+                      <source media="(min-width: 1200px" srcset="images/project-lab.jpg" />
+                      <source media="(min-width: 768px" srcset="images/project-lab768.jpg" />
+                      <img src="images/project-lab480@2x.jpg" alt="zawieszka" />
+                    </picture>
                     <div class="main-box__label">
                       <p class="main-box__paragraph">
                         Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -257,12 +283,11 @@
               <li class="main-box__item">
                 <figure class="main-box__box-img">
                   <div class="main-box__hidden-label">
-                    <img
-                      src="images/growing-business.jpg"
-                      alt="pisanie na laptopie"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source media="(min-width: 1200px" srcset="images/growing-business.jpg" />
+                      <source media="(min-width: 768px" srcset="images/growing-business768.jpg" />
+                      <img src="images/growing-business480@2x.jpg" alt="pisanie na laptopie" />
+                    </picture>
                     <div class="main-box__label">
                       <p class="main-box__paragraph">
                         Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -283,7 +308,7 @@
       </div>
     </main>
     <!--Footer-->
- <footer class="footer">
+    <footer class="footer">
       <div class="footer__wrapper">
         <div class="container last">
           <a class="footer__logo" href="index.html"
@@ -354,5 +379,42 @@
         </button>
       </form>
     </footer>
+    <div class="menu-container js-menu-container">
+      <button class="menu__toggle menu__toggle--open js-close-menu">X</button>
+      <div class="menu-container__wrapper">
+        <ul class="menu-container__list">
+          <li class="menu-container__item">
+            <a class="menu-container__item-link" href="./index.html">Agencja</a>
+          </li>
+          <li class="menu-container__item">
+            <a class="menu-container__item-link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="menu-container__item">
+            <a class="menu-container__item-link" href="#">Kontakt</a>
+          </li>
+          <li class="menu-container__item menu-container__item--tel">
+            <a
+              class="menu-container__item-link menu-container__item-link--tel"
+              href="tel:++48111111111"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li class="menu-container__item">
+            <a
+              class="menu-container__item-link menu-container__item-link--email"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="menu-container__list-socail">
+          <li class="menu-container__item-social">Instagram</li>
+          <li class="menu-container__item-social">Twitter</li>
+          <li class="menu-container__item-social">Facebook</li>
+          <li class="menu-container__item-social">Linkedin</li>
+        </ul>
+      </div>
+    </div>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>
